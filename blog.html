@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <!--Thi is favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!--Thi is font awasome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--This is cdn  -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <!--Thi is flowbite cdn  -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css" />
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/flowbite.js"></script>  
+  </head>
+  <body>
+    <!--Thi is header  -->
+    <header class="container mx-auto my-5">
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn font-bold bg-black-600 normal-case text-xl">Latest News</a>
+        </div>
+        <div class="flex-none">
+          <div class="mr-4 font-bold">
+            <a href="home.html" class="text-gray-600 text-xl font-bold"> News</a>
+            <a href="blog.html" target="_blank" class="text-black-600 inline-block ml-5 border-b-black-600 border-b-4 text-xl font-bold"> Blog</a>
+          </div>
+
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="img/girl.png" />
+              </div>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--Thi is line  -->
+      <div class="mt-6 border-b-2 border-b-gray-300 container"></div>
+
+      <section class="container mt-10">
+        <div id="accordion-color" data-accordion="collapse" data-active-classes="bg-blue-100 dark:bg-gray-800 text-blue-600 dark:text-white">
+          <h2 id="accordion-color-heading-1">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-1" aria-expanded="true" aria-controls="accordion-color-body-1">
+              <span>Difference between let, var and const?</span>
+              <svg data-accordion-icon class="w-6 h-6 rotate-180 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-color-body-1" class="hidden" aria-labelledby="accordion-color-heading-1">
+            <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700 dark:bg-gray-900">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                var: <br />
+                - hoisted (always declared at top of scope, global if none)
+                <br />
+                -function scope
+                <br />
+                <br />
+                let:
+                <br />
+                - block scope
+                <br />
+                - not redeclarable
+                <br />
+                <br />
+                const:
+                <br />
+                - block scope
+                <br />
+                - not reassignable
+                <br />
+                - not redeclarable
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-color-heading-2">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-b-0 border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-2" aria-expanded="false" aria-controls="accordion-color-body-2">
+              <span>Difference between map, filter and foreach?</span>
+              <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-color-body-2" class="hidden" aria-labelledby="accordion-color-heading-2">
+            <div class="p-5 font-light border border-b-0 border-gray-200 dark:border-gray-700">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">
+                <strong>.forEach()</strong>, is used to execute the same code on every element in an array but does not change the array and it returns undefined.
+                <br />
+                <strong>.map()</strong> executes the same code on every element in an array and returns a new array with the updated elements.
+                <br />
+                <strong>.filter()</strong> checks every element in an array to see if it meets a certain criteria and returns a new array with the elements that return truthy for the criteria.
+              </p>
+            </div>
+          </div>
+          <h2 id="accordion-color-heading-3">
+            <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left text-gray-500 border border-gray-200 focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-800 dark:border-gray-700 dark:text-gray-400 hover:bg-blue-100 dark:hover:bg-gray-800" data-accordion-target="#accordion-color-body-3" aria-expanded="false" aria-controls="accordion-color-body-3">
+              <span>Why use template literals?</span>
+              <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </button>
+          </h2>
+          <div id="accordion-color-body-3" class="hidden" aria-labelledby="accordion-color-heading-3">
+            <div class="p-5 font-light border border-t-0 border-gray-200 dark:border-gray-700">
+              <p class="mb-2 text-gray-500 dark:text-gray-400">Template literals provide an easy way to interpolate variables and expressions into strings. The method is called string interpolation.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!--Thi is header end  -->
+     <!-- script  -->
+     <script src="js/home-featured.js"></script>   
+  </body>
+</html>

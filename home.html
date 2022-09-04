@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latest News</title>
+    <!--Thi is favicon -->
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <!--Thi is font awasome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Thi is cdn  -->
+    <link href="css/custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com/"></script>
+  </head>
+  <body class="px-5">
+    <!--Thi is header  -->
+    <header class="container mx-auto my-5">
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <a class="btn font-bold bg-black-600 normal-case px-2 md:px-4 md:text-xl">Latest News</a>
+        </div>
+        <div class="flex-none">
+          <div class="mr-4 font-bold">
+            <a href="home.html" class="text-black-400 inline-block mr-5 border-b-black-600 border-b-4 text-xl font-bold"> News</a>
+            <a href="blog.html" target="_blank" class="text-gray-600 text-xl font-bold"> Blog</a>
+          </div>
+          <div class="dropdown dropdown-end">
+            <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              <div class="w-10 rounded-full">
+                <img src="img/girl.png" />
+              </div>
+            </label>
+            <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+              <li>
+                <a class="justify-between">
+                  Profile
+                  <span class="badge">New</span>
+                </a>
+              </li>
+              <li><a>Settings</a></li>
+              <li><a>Logout</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- line  -->
+      <div class="mt-6 border-b-2 border-b-gray-300 container"></div>
+    </header>
+    <!--Thi is header end  -->
+    <main>
+      <!--Thi is  category start  -->
+      <section class="container mx-auto">
+        <ul id="category-container" class="menu menu-horizontal bg-base-100 rounded-box grid grid-cols-3 lg:grid-cols-8 justify-center"></ul>
+      </section>
+      <!--Thi is category end  -->
+      <!--Thi is founded msg  -->
+      <div id="no-found" class="card w-full container mx-auto bg-white text-black text-primary-content drop-shadow-md mt-5 hidden border-t-2 border-t-gray-300">
+        <div class="card-body">
+          <h2 class="card-title"><span id="item-found">0</span> items found!</h2>
+        </div>
+      </div>
+      <!--Thi is  founded msg end -->
+      <!-- Thi is sort view start  -->
+      <section class="container md:flex md:justify-between md:items-center ml-auto md:mx-auto my-10">
+        <div class="flex items-center mb-3">
+          <div>
+            <h2 class="mr-4 text-xl font-semibold">Sort By View:</h2>
+          </div>
+          <div>
+            <select class="select select-bordered w-full max-w-xs">
+              <option>Default 1</option>
+              <option>Default 2</option>
+              <option>Default 3</option>
+              <option>Default 3</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center">
+            <div class="mr-5 bg-black-600 p-2 text-white font-semibold rounded-md">
+              <h1>Today’s Pick</h1>
+            </div>
+            <div class="border-2 border-gray-500 rounded-md p-1">
+              <h1>Trending</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Thi is sort view end  -->
+
+      <!-- spinner start -->
+      <div id="spinner" class="container mx-auto hidden">
+        <progress class="progress w-full"></progress>
+      </div>
+      <!-- spinner  end-->
+      <section id="card-container" class="container mx-auto mt-5 mb-20 grid"></section>
+      <!-- News section end -->
+      <!-- Modal  -->
+      <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+      <div class="modal">
+        <div class="modal-box relative">
+          <label for="my-modal-4" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
+          <div id="modal-body"></div>
+        </div>
+      </div>
+    </main>
+    <!--Thi is footer start  -->
+    <footer class="footer footer-center p-10 bg-black text-base-content rounded text-white">
+      <p class="text-center footer-text">Copyright @ 2022 All Rights Reserved</p>
+    </footer>
+    <!--Thi is footer end  -->
+    <!-- script  -->
+    <script src="js/home-featured.js"></script>
+  </body>
+</html>

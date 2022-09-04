@@ -1,0 +1,16 @@
+:root, [data-theme] {
+    background: linear-gradient(85.25deg,#291f53 -2.6%,#201d39 101.25%) !important;
+    color: #fff !important;
+}
+
+.bg-base-100 {
+    background-color: #3c2764 !important;
+}
+
+.text-white {
+    background: #a100ff1f !important;
+}
+
+.select {
+    background: rebeccapurple !important;
+}
